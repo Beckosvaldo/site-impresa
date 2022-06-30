@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topo{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:0 2%;
+}
+header{
+    padding: 20px 0;
+    background: rgb(83, 74, 74);
+}
+.img{
+    width: 50%;
+}
+img{
+ height: 100px;
+}
+.menu{
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+    
+}
+.menu a{
+    color: white;
+    margin-right: 50px;
+    padding: 10px;
+    background: black;
+    border-radius: 10px;
+}
