@@ -8,3 +8,6 @@ function menuShow() {
         document.querySelector('.icon').src = "fechar.png";
     }
 }
+function Cadastro(){
+    
+}

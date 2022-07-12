@@ -4,40 +4,7 @@
     box-sizing: border-box;
     
 }
-.carrosel{
-    height: 250px;
-    width: 600px;
-    overflow: hidden;
-    margin: 50px auto;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
-}
-.carrosel ul{
-    display: flex;
-    list-style: none;
-    width: 3600px;
-    height: 250px;  
-}
-.carrosel li{
-    position: relative;
-    animation: slide 15s infinite ease-out;
-}
-@keyframes slide {
-    0%{left:0px}
-    8%{left:0px}
-    16.66%{left:-600px}
-    24.5%{left:-600px}
-    33.32%{left:-1200px}
-    41.65%{left:-1200px}
-    49.98%{left:-1800px}
-    58.31%{left:-1800px}
-    66.64%{left:-2400px}
-    74.97%{left:-2400px}
-    83.3%{left:-3000px}
-    91.63%{left:-3000px}
-    100%{left:0px}
-    
-   
-}
+
 
 
 
@@ -46,10 +13,6 @@
     width: 600px;
 }
 
-p{
-    
-    
-}
 body{
     background-image: linear-gradient( rgb(65, 64, 64),rgb(214, 213, 213));
     background-repeat: no-repeat;
@@ -128,10 +91,17 @@ header{
 }
 .fix{
     position: fixed;
-    margin-left:300px;
+    margin-left:400px;
     margin-top: -155px;
     padding: 1px;
     background: rgb(65, 64, 64);
+}
+.cadastrocima{
+    background: rgb(65, 64, 64);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 @media screen and (max-width: 800px) {
     .nav-bar {
@@ -171,5 +141,76 @@ header{
 }
 .icon{
     max-height: 60px;
+}
+.empresa{
+    width: 600px;
+}
+.quem{
+    font-size: 30px;
+}
+.somos{
+    font-size: 50px;
+    }
+.carrosel{
+    height: 250px;
+    width: 600px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+}
+.carrosel ul{
+    display: flex;
+    list-style: none;
+    width: 3600px;
+    height: 250px;  
+}
+.carrosel li{
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+@keyframes slide {
+    0%{left:0px}
+    8%{left:0px}
+    16.66%{left:-600px}
+    24.5%{left:-600px}
+    33.32%{left:-1200px}
+    41.65%{left:-1200px}
+    49.98%{left:-1800px}
+    58.31%{left:-1800px}
+    66.64%{left:-2400px}
+    74.97%{left:-2400px}
+    83.3%{left:-3000px}
+    91.63%{left:-3000px}
+    100%{left:0px}
+}
+.localiza{
+    display: flex;
+    margin-top: 50px;
+}
+.imgloca{
+    width: 600px;
+    
+}
+.endereço{
+    width: 400px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+.entrarbaixo{
+    width: 99%;
+    height: 100px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.botcadastro{
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    background: black;
+    color: white;
+    border-radius:50px;
+    cursor: pointer;
 }
 
