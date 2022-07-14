@@ -11,3 +11,19 @@ function menuShow() {
 function Cadastro(){
     
 }
+const imgs = document.getElementById("ing");
+const img = document.querySelectorAll("#ing img");
+
+let idx = 0;
+
+function carrosssel(){
+    idx++;
+
+    if(idx > img.length - 1){
+        idx = 0;
+    }
+
+    imgs.style.transform = `translateX(${-idx * 700}px)`
+}
+
+setInterval(carrosssel, 2500);
