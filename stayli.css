@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Condensed&display=swap');
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -23,6 +24,8 @@ body{
     justify-content: center;
     position: initial;
     font-size: 200px;
+    border: solid;
+    border-width: 10px; 
 }
 
 header{
@@ -90,7 +93,7 @@ header{
 
 }
 .fix{
-    position: fixed;
+    position: absolute;
     margin-left:400px;
     margin-top: -155px;
     padding: 1px;
@@ -165,7 +168,7 @@ header{
     height: 250px;  
 }
 .carrosel li{
-    position: relative;
+    position: relative;  
     animation: slide 15s infinite ease-out;
 }
 @keyframes slide {
