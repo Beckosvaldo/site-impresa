@@ -26,6 +26,10 @@ body{
     font-size: 200px;
     border: solid;
     border-width: 10px; 
+    margin-top: 200px;
+    color:black;
+        
+    
 }
 
 header{
@@ -81,11 +85,7 @@ header{
    
     
 }
-.nome{
-    margin-top: 200px;
-    display: grid;
 
-}
 .mobile-menu {
     display: none;
 }
@@ -156,7 +156,7 @@ header{
     font-size: 50px;
     }
     .carrossel {
-        z-index: -1;
+        z-index: -2;
         box-shadow: 2px 2px 4px black;
         overflow: hidden;
         height: 390px;
@@ -165,7 +165,7 @@ header{
         position:static;
     }
     
-    .container {
+    .fotoss {
        
         display: flex;
         transition: transform 0.5s ease-in-out;
@@ -199,7 +199,7 @@ header{
     align-items: center;
     margin-top: 50px;
 }
-.botcadastro{
+#cadastrar{
     height: 40px;
     width: 200px;
     font-size: 15px;
@@ -207,5 +207,15 @@ header{
     color: white;
     border-radius:50px;
     cursor: pointer;
+} 
+
+.hide{
+    display: none;
+}
+#planilha-cadastro{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
 }
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="stayli.css">
+    <link rel="stylesheet" href="cadastro/cadastro.css">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,7 @@
         <nav class="nav-bar">
     <div class="topo">
         <div class="img">
-            <img id="img" src="logo-removebg-preview (1).png" >
+            <img id="img" src="./img/logo-removebg-preview (1).png" >
         </div>
         
         <div class="nav-list">
@@ -24,7 +25,7 @@
         </div>
     </div>
     <div class="mobile-menu-icon">
-        <button onclick="menuShow()"><img class="icon" src="menu.png" alt=""></button>
+        <button onclick="menuShow()"><img class="icon" src="./img/menu.png" alt=""></button>
     </div>
 </nav>,
 <div class="mobile-menu">
@@ -32,7 +33,7 @@
         <li class="nav-item"><a href="/" class="nav-link">Inicio</a></li>
         <li class="nav-item"><a href="#empresa" class="nav-link">Empresa</a></li>
         <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
-        <li class="nav-item"><button class="cadastrocima" id="cadastro" onclick="Cadastro()">Cadatre-se!</button></li>
+        <li class="nav-item"><button id="cadastro" onclick="Cadastro()">Cadatre-se!</button></li>
     </ul>
 </div>
 </header>
@@ -40,7 +41,7 @@
 <h1 class="nome">PEMSE</h1>
 
 <div class="carrossel">
-    <div class="container" id="ing">
+    <div class="fotoss" id="ing">
            <img class="foto"  src="./img/pessoal.jpg" alt="">
             <img class="foto" src="./img/pessoal 2.jpg" alt="">
             <img  class="foto" src="./img/patrimonial.png" alt="">
@@ -68,8 +69,76 @@
     </div>
 </div>
 <div class="entrarbaixo">
-    <button class="botcadastro" id="cadastro" onclick="Cadastro()" ><b> Cadatre-se! </b></button>
+    <button id="cadastrar" onclick="Cadastro()" ><b> Cadatre-se! </b></button>
 </div>
+
+<div class="hide" id="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content" >      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
+          </p>
+          
+          <p> 
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
+          </p>
+          
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+          
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" />
+          </p>
+          
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+          </p>
+          
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+          
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div> 
 
     <script src="script.js"></script>
 </body>

@@ -5,7 +5,7 @@ function menuShow() {
         document.querySelector('.icon').src = "menu.png";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "fechar.png";
+        document.querySelector('.icon').src = "./img/fechar.png";
     }
 }
 function Cadastro(){
@@ -27,3 +27,9 @@ function carrosssel(){
 }
 
 setInterval(carrosssel, 2500);
+
+function Cadastro(){
+    
+        let planilhacadastro = document.getElementById("container");
+        planilhacadastro.classList.toggle("hide");
+}
